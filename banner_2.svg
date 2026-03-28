@@ -1,0 +1,231 @@
+<svg width="900" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#010510"/>
+      <stop offset="60%" stop-color="#050e2e"/>
+      <stop offset="100%" stop-color="#0a1a4a"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1a4a"/>
+      <stop offset="100%" stop-color="#010510"/>
+    </linearGradient>
+    <filter id="gold-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="star-glow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="text-glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="blue-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- SKY -->
+  <rect width="900" height="280" fill="url(#sky)"/>
+
+  <!-- DISTANT SILHOUETTES -->
+  <ellipse cx="150" cy="175" rx="120" ry="60" fill="#0d1f4a" opacity="0.6"/>
+  <ellipse cx="750" cy="175" rx="110" ry="55" fill="#0d1f4a" opacity="0.5"/>
+  <ellipse cx="450" cy="180" rx="90" ry="45" fill="#0f2255" opacity="0.4"/>
+  <ellipse cx="300" cy="178" rx="70" ry="40" fill="#0c1d45" opacity="0.5"/>
+  <ellipse cx="620" cy="178" rx="80" ry="42" fill="#0c1d45" opacity="0.45"/>
+
+  <!-- STAR FIELD -->
+  <circle cx="80" cy="25" r="1.2" fill="#c8d8f8"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.1s" repeatCount="indefinite"/></circle>
+  <circle cx="180" cy="15" r="0.9" fill="#a0b8f0"><animate attributeName="opacity" values="0.5;1;0.5" dur="3.4s" repeatCount="indefinite"/></circle>
+  <circle cx="260" cy="30" r="1.1" fill="#c8d8f8"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.7s" repeatCount="indefinite"/></circle>
+  <circle cx="340" cy="18" r="0.8" fill="#a0b8f0"><animate attributeName="opacity" values="0.6;1;0.6" dur="1.8s" repeatCount="indefinite"/></circle>
+  <circle cx="430" cy="22" r="1" fill="#c8d8f8"><animate attributeName="opacity" values="0.3;1;0.3" dur="4.1s" repeatCount="indefinite"/></circle>
+  <circle cx="520" cy="10" r="0.9" fill="#a0b8f0"><animate attributeName="opacity" values="0.4;0.9;0.4" dur="2.3s" repeatCount="indefinite"/></circle>
+  <circle cx="610" cy="28" r="1.2" fill="#c8d8f8"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.8s" repeatCount="indefinite"/></circle>
+  <circle cx="700" cy="12" r="0.8" fill="#a0b8f0"><animate attributeName="opacity" values="0.5;1;0.5" dur="2.6s" repeatCount="indefinite"/></circle>
+  <circle cx="790" cy="22" r="1.1" fill="#c8d8f8"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="3.2s" repeatCount="indefinite"/></circle>
+  <circle cx="855" cy="35" r="0.9" fill="#a0b8f0"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.9s" repeatCount="indefinite"/></circle>
+  <circle cx="130" cy="48" r="0.7" fill="#a0b8f0"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.5s" repeatCount="indefinite"/></circle>
+  <circle cx="370" cy="45" r="0.8" fill="#c8d8f8"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.1s" repeatCount="indefinite"/></circle>
+  <circle cx="480" cy="50" r="0.7" fill="#a0b8f0"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.8s" repeatCount="indefinite"/></circle>
+  <circle cx="660" cy="42" r="0.9" fill="#c8d8f8"><animate attributeName="opacity" values="0.5;1;0.5" dur="4.3s" repeatCount="indefinite"/></circle>
+  <circle cx="820" cy="55" r="0.7" fill="#a0b8f0"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.2s" repeatCount="indefinite"/></circle>
+  <circle cx="50" cy="65" r="0.8" fill="#c8d8f8"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.6s" repeatCount="indefinite"/></circle>
+  <circle cx="220" cy="70" r="0.7" fill="#a0b8f0"><animate attributeName="opacity" values="0.4;0.9;0.4" dur="2.4s" repeatCount="indefinite"/></circle>
+  <circle cx="555" cy="65" r="0.8" fill="#c8d8f8"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.9s" repeatCount="indefinite"/></circle>
+  <circle cx="760" cy="68" r="0.7" fill="#a0b8f0"><animate attributeName="opacity" values="0.5;0.9;0.5" dur="2.1s" repeatCount="indefinite"/></circle>
+  <circle cx="30" cy="38" r="0.8" fill="#c8d8f8"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="3.3s" repeatCount="indefinite"/></circle>
+  <circle cx="870" cy="20" r="0.7" fill="#a0b8f0"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.9s" repeatCount="indefinite"/></circle>
+  <circle cx="440" cy="60" r="0.6" fill="#c8d8f8"><animate attributeName="opacity" values="0.4;1;0.4" dur="4.5s" repeatCount="indefinite"/></circle>
+  <circle cx="580" cy="80" r="0.7" fill="#a0b8f0"><animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.6s" repeatCount="indefinite"/></circle>
+  <circle cx="145" cy="82" r="0.6" fill="#c8d8f8"><animate attributeName="opacity" values="0.2;0.7;0.2" dur="3.7s" repeatCount="indefinite"/></circle>
+
+  <!-- BIG STAR top-left -->
+  <g filter="url(#star-glow)">
+    <line x1="75" y1="38" x2="75" y2="78" stroke="#fffbe0" stroke-width="1.8" stroke-linecap="round"><animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/></line>
+    <line x1="55" y1="58" x2="95" y2="58" stroke="#fffbe0" stroke-width="1.8" stroke-linecap="round"><animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/></line>
+    <line x1="62" y1="45" x2="88" y2="71" stroke="#f5c842" stroke-width="1" stroke-linecap="round"><animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite"/></line>
+    <line x1="88" y1="45" x2="62" y2="71" stroke="#f5c842" stroke-width="1" stroke-linecap="round"><animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite"/></line>
+    <circle cx="75" cy="58" r="4" fill="#fffbe0">
+      <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Secondary star top-right -->
+  <g filter="url(#star-glow)" opacity="0.75">
+    <line x1="820" y1="30" x2="820" y2="55" stroke="#fffbe0" stroke-width="1.2" stroke-linecap="round"><animate attributeName="opacity" values="0.4;0.9;0.4" dur="2.8s" repeatCount="indefinite"/></line>
+    <line x1="807" y1="42" x2="833" y2="42" stroke="#fffbe0" stroke-width="1.2" stroke-linecap="round"><animate attributeName="opacity" values="0.4;0.9;0.4" dur="2.8s" repeatCount="indefinite"/></line>
+    <circle cx="820" cy="42" r="2.5" fill="#fffbe0"><animate attributeName="opacity" values="0.6;1;0.6" dur="2.8s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- Mini star mid -->
+  <g opacity="0.55">
+    <line x1="680" y1="52" x2="680" y2="64" stroke="#f5c842" stroke-width="0.8" stroke-linecap="round"><animate attributeName="opacity" values="0.3;0.7;0.3" dur="3.5s" repeatCount="indefinite"/></line>
+    <line x1="674" y1="58" x2="686" y2="58" stroke="#f5c842" stroke-width="0.8" stroke-linecap="round"><animate attributeName="opacity" values="0.3;0.7;0.3" dur="3.5s" repeatCount="indefinite"/></line>
+    <circle cx="680" cy="58" r="1.5" fill="#fffbe0"><animate attributeName="opacity" values="0.4;0.9;0.4" dur="3.5s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- GOLDEN THREADS -->
+  <path d="M -20 55 Q 150 20 300 65 Q 450 110 600 50 Q 720 10 920 45" fill="none" stroke="#f5c842" stroke-width="2" stroke-linecap="round" filter="url(#gold-glow)">
+    <animate attributeName="opacity" values="0.5;0.85;0.5" dur="4s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,8;0,0" dur="4s" repeatCount="indefinite"/>
+  </path>
+  <path d="M -20 55 Q 150 20 300 65 Q 450 110 600 50 Q 720 10 920 45" fill="none" stroke="#f5c842" stroke-width="1" stroke-dasharray="8 14" stroke-linecap="round" opacity="0.35">
+    <animate attributeName="stroke-dashoffset" from="0" to="-200" dur="3s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,8;0,0" dur="4s" repeatCount="indefinite"/>
+  </path>
+  <path d="M -20 28 Q 200 68 400 33 Q 600 -2 920 26" fill="none" stroke="#f5c842" stroke-width="1.2" stroke-linecap="round">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="5s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-5;0,0" dur="5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M -20 28 Q 200 68 400 33 Q 600 -2 920 26" fill="none" stroke="#f5c842" stroke-width="0.7" stroke-dasharray="6 16" opacity="0.25">
+    <animate attributeName="stroke-dashoffset" from="0" to="-300" dur="5s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-5;0,0" dur="5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M -20 105 Q 100 75 250 110 Q 420 148 580 93 Q 720 48 920 78" fill="none" stroke="#f5c842" stroke-width="1.4" stroke-linecap="round">
+    <animate attributeName="opacity" values="0.4;0.65;0.4" dur="6s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,6;0,0" dur="6s" repeatCount="indefinite"/>
+  </path>
+  <path d="M -20 105 Q 100 75 250 110 Q 420 148 580 93 Q 720 48 920 78" fill="none" stroke="#f5c842" stroke-width="0.8" stroke-dasharray="10 18" opacity="0.2">
+    <animate attributeName="stroke-dashoffset" from="-100" to="100" dur="6s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,6;0,0" dur="6s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 580 12 Q 660 35 710 18 Q 755 2 795 28 Q 840 54 875 28" fill="none" stroke="#f5c842" stroke-width="1.5" stroke-linecap="round" filter="url(#gold-glow)">
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="3.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M -20 130 Q 80 108 180 125 Q 290 142 380 118 Q 470 94 560 115" fill="none" stroke="#f5c842" stroke-width="1" stroke-linecap="round" opacity="0.35">
+    <animate attributeName="opacity" values="0.2;0.45;0.2" dur="7s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,4;0,0" dur="7s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- BLUE AURORA -->
+  <ellipse cx="450" cy="118" rx="280" ry="58" fill="#1a3a9a" filter="url(#blue-glow)">
+    <animate attributeName="opacity" values="0.08;0.16;0.08" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="rx" values="260;300;260" dur="5s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- TITLE -->
+  <text x="450" y="112" text-anchor="middle" font-family="'Palatino Linotype','Georgia',serif" font-size="52" font-weight="300" letter-spacing="12" fill="#e8f0ff" filter="url(#text-glow)" opacity="0.95">CHRIS</text>
+  <text x="450" y="140" text-anchor="middle" font-family="'Segoe UI','Arial',sans-serif" font-size="12" font-weight="300" letter-spacing="4" fill="#f5c842" opacity="0.85">python developer · bot crafter · game builder</text>
+
+  <!-- Deco line -->
+  <line x1="290" y1="150" x2="610" y2="150" stroke="#f5c842" stroke-width="0.5">
+    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="284" cy="150" r="2" fill="#f5c842"><animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/></circle>
+  <circle cx="616" cy="150" r="2" fill="#f5c842"><animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/></circle>
+
+  <!-- WATER -->
+  <rect x="0" y="170" width="900" height="110" fill="url(#water)"/>
+
+  <!-- WAVES -->
+  <path d="M -100 185 Q 0 175 100 185 Q 200 195 300 185 Q 400 175 500 185 Q 600 195 700 185 Q 800 175 900 185 L 900 280 L -100 280 Z" fill="#071530" opacity="0.9">
+    <animateTransform attributeName="transform" type="translate" values="0,0;50,0;0,0" dur="6s" repeatCount="indefinite"/>
+  </path>
+  <path d="M -100 190 Q 50 178 150 190 Q 280 202 400 190 Q 520 178 650 192 Q 780 206 950 190 L 950 280 L -100 280 Z" fill="#081840" opacity="0.85">
+    <animateTransform attributeName="transform" type="translate" values="50,0;0,0;50,0" dur="5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M -50 197 Q 100 185 200 197 Q 330 210 460 197 Q 580 184 720 200 Q 850 215 1000 197 L 1000 280 L -50 280 Z" fill="#0a1e4a" opacity="0.8">
+    <animateTransform attributeName="transform" type="translate" values="0,0;-60,0;0,0" dur="7s" repeatCount="indefinite"/>
+  </path>
+  <path d="M -100 200 Q 80 190 180 202 Q 320 215 450 200 Q 590 185 740 202 Q 860 218 1000 200" fill="none" stroke="#1a4a9a" stroke-width="1.5" opacity="0.6">
+    <animateTransform attributeName="transform" type="translate" values="0,0;40,0;0,0" dur="4.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M -100 205 Q 60 195 160 207 Q 280 220 420 205 Q 560 190 700 208 Q 820 224 1000 205" fill="none" stroke="#2a5abf" stroke-width="1" opacity="0.4">
+    <animateTransform attributeName="transform" type="translate" values="-30,0;30,0;-30,0" dur="5.5s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- HORIZON GLOW -->
+  <rect x="0" y="162" width="900" height="22" fill="#1a3a8a" opacity="0.15">
+    <animate attributeName="opacity" values="0.1;0.22;0.1" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- GOLDEN REFLECTION -->
+  <ellipse cx="450" cy="218" rx="200" ry="12" fill="#f5c842" opacity="0.08">
+    <animate attributeName="rx" values="180;220;180" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.05;0.12;0.05" dur="4s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="450" cy="230" rx="130" ry="7" fill="#f5c842" opacity="0.06">
+    <animate attributeName="rx" values="110;150;110" dur="5s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- WATER SHIMMER -->
+  <line x1="200" y1="222" x2="350" y2="222" stroke="#f5c842" stroke-width="0.5">
+    <animate attributeName="x1" values="200;175;200" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="350;375;350" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.1;0.3;0.1" dur="3s" repeatCount="indefinite"/>
+  </line>
+  <line x1="400" y1="228" x2="520" y2="228" stroke="#f5c842" stroke-width="0.4">
+    <animate attributeName="opacity" values="0.08;0.22;0.08" dur="4s" repeatCount="indefinite"/>
+  </line>
+  <line x1="560" y1="220" x2="680" y2="220" stroke="#a0b8e8" stroke-width="0.4">
+    <animate attributeName="x1" values="560;535;560" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.1;0.25;0.1" dur="3.5s" repeatCount="indefinite"/>
+  </line>
+  <line x1="100" y1="230" x2="200" y2="230" stroke="#a0b8e8" stroke-width="0.3">
+    <animate attributeName="opacity" values="0.05;0.2;0.05" dur="5s" repeatCount="indefinite"/>
+  </line>
+  <line x1="700" y1="235" x2="800" y2="235" stroke="#f5c842" stroke-width="0.3">
+    <animate attributeName="opacity" values="0.05;0.18;0.05" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- LIGHT PARTICLES -->
+  <circle cx="200" cy="210" r="1.5" fill="#f5c842">
+    <animate attributeName="cx" values="200;222;200" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.6;0.2" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="650" cy="215" r="1.2" fill="#f5c842">
+    <animate attributeName="cx" values="650;628;650" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.15;0.5;0.15" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="380" cy="225" r="1" fill="#a0b8e8">
+    <animate attributeName="cx" values="380;402;380" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.5;0.2" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="530" cy="218" r="1.2" fill="#f5c842">
+    <animate attributeName="cx" values="530;508;530" dur="5.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.1;0.45;0.1" dur="3.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="120" cy="240" r="0.9" fill="#a0b8e8">
+    <animate attributeName="cx" values="120;145;120" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.1;0.35;0.1" dur="4.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="780" cy="228" r="1" fill="#f5c842">
+    <animate attributeName="cx" values="780;758;780" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.1;0.4;0.1" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- FISH SILHOUETTES -->
+  <ellipse cx="310" cy="208" rx="6" ry="2.5" fill="#1a4a9a">
+    <animate attributeName="cx" values="310;390;310" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.15;0.4;0.15" dur="10s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="600" cy="212" rx="5" ry="2" fill="#1a4a9a">
+    <animate attributeName="cx" values="600;520;600" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.1;0.35;0.1" dur="12s" repeatCount="indefinite"/>
+  </ellipse>
+</svg>
